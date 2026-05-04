@@ -935,10 +935,6 @@ textarea:focus {
     padding: 6px 8px;
   }
 
-  .flying-avatar {
-    display: none;
-  }
-
   .hero-glow-one,
   .hero-glow-two {
     display: none;

@@ -54,8 +54,7 @@ const randomRange = (min, max) => Math.random() * (max - min) + min;
 const initUfoMotion = () => {
   if (!flyingAvatar) return;
   const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const isSmallMobile = window.matchMedia("(max-width: 480px)").matches;
-  if (shouldReduceMotion || isSmallMobile) return;
+  if (shouldReduceMotion) return;
 
   const limits = () => {
     const maxX = Math.max(window.innerWidth - 120, 20);
