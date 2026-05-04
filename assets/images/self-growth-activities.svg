@@ -1,0 +1,93 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF3FF"/>
+      <stop offset="1" stop-color="#F2FBF5"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FBFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="420" rx="26" fill="url(#bg)"/>
+
+  <text x="52" y="56" fill="#153E75" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">Self Growth Activities For Children</text>
+  <text x="52" y="88" fill="#44607E" font-size="18" font-family="Inter, Arial, sans-serif">Modern learning + personality development</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(40 118)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="64" cy="62" r="32" fill="#DDEEFF"/>
+    <circle cx="64" cy="46" r="10" stroke="#2F6DA8" stroke-width="3"/>
+    <path d="M64 57V92M49 72H79M54 108L64 92L74 108" stroke="#2F6DA8" stroke-width="3" stroke-linecap="round"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Human Body 3D</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Concept learning</text>
+  </g>
+
+  <g transform="translate(326 118)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <rect x="30" y="34" width="70" height="54" rx="10" fill="#E2F3FF" stroke="#2F6DA8" stroke-width="3"/>
+    <circle cx="49" cy="102" r="10" fill="#2F6DA8"/>
+    <circle cx="81" cy="102" r="10" fill="#2F6DA8"/>
+    <circle cx="49" cy="55" r="5" fill="#2F6DA8"/>
+    <circle cx="81" cy="55" r="5" fill="#2F6DA8"/>
+    <rect x="56" y="68" width="18" height="8" rx="3" fill="#2F6DA8"/>
+    <text x="116" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Robotics</text>
+    <text x="116" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Build and explore</text>
+  </g>
+
+  <g transform="translate(612 118)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="64" cy="42" r="11" fill="#2F6DA8"/>
+    <path d="M44 64C52 53 76 53 84 64M64 64V96M44 96H84M48 108H80" stroke="#2F6DA8" stroke-width="4" stroke-linecap="round"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Yoga</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Mind and body balance</text>
+  </g>
+
+  <g transform="translate(898 118)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="63" cy="40" r="11" fill="#2F6DA8"/>
+    <path d="M63 54V84M63 66L86 78M63 66L40 78M63 84L82 104M63 84L44 104" stroke="#2F6DA8" stroke-width="4" stroke-linecap="round"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Exercise</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Fitness and stamina</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(40 258)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="60" cy="72" r="20" stroke="#2F6DA8" stroke-width="4"/>
+    <rect x="76" y="86" width="26" height="8" rx="4" transform="rotate(30 76 86)" fill="#2F6DA8"/>
+    <path d="M46 72H74M60 58V86" stroke="#2F6DA8" stroke-width="3"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Telescope</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Space curiosity</text>
+  </g>
+
+  <g transform="translate(326 258)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="58" cy="52" r="14" fill="#2F6DA8"/>
+    <rect x="48" y="70" width="20" height="28" rx="8" fill="#2F6DA8"/>
+    <rect x="76" y="63" width="26" height="32" rx="12" fill="#E2F3FF" stroke="#2F6DA8" stroke-width="3"/>
+    <circle cx="89" cy="79" r="4" fill="#2F6DA8"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Singing</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Voice confidence</text>
+  </g>
+
+  <g transform="translate(612 258)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <rect x="38" y="44" width="30" height="30" rx="6" fill="#DDEEFF" stroke="#2F6DA8" stroke-width="3"/>
+    <rect x="68" y="74" width="30" height="30" rx="6" fill="#E5F8EC" stroke="#2F6DA8" stroke-width="3"/>
+    <circle cx="102" cy="52" r="14" fill="#FFE8D7" stroke="#2F6DA8" stroke-width="3"/>
+    <text x="128" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Games</text>
+    <text x="128" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Brain and team play</text>
+  </g>
+
+  <g transform="translate(898 258)">
+    <rect width="268" height="124" rx="16" fill="url(#tile)" stroke="#D4E1F2"/>
+    <circle cx="62" cy="40" r="11" fill="#2F6DA8"/>
+    <path d="M62 54L52 76L74 76L62 54Z" fill="#2F6DA8"/>
+    <path d="M52 76L42 102M74 76L84 102M58 86L40 92M66 86L86 92" stroke="#2F6DA8" stroke-width="4" stroke-linecap="round"/>
+    <text x="112" y="56" fill="#153E75" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700">Dance</text>
+    <text x="112" y="82" fill="#5A6F88" font-size="14" font-family="Inter, Arial, sans-serif">Expression and rhythm</text>
+  </g>
+</svg>

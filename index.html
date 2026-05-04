@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="flying-avatar" id="flyingAvatar" aria-hidden="true">
+    <div class="ufo">
+      <span class="ufo-dome"></span>
+      <span class="ufo-base"></span>
+      <span class="ufo-light l1"></span>
+      <span class="ufo-light l2"></span>
+      <span class="ufo-light l3"></span>
+      <span class="ufo-beam"></span>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container nav-wrap">
@@ -41,31 +52,52 @@
   <main>
     <!-- Hero -->
     <section class="hero section">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">For Students of Classes 5 to 12</p>
-          <h1>Build Academic Confidence Through Local, Structured Student Programs</h1>
+        <div class="reveal">
+          <p class="eyebrow">Modern Learning For Classes 5 to 12</p>
+          <h1>Better Learning, Better Confidence For Your Child</h1>
           <p class="hero-subtext">
-            Scholars Space helps families in our town discover trusted competitions, academic activities, and mentoring opportunities under one credible platform.
+            Scholars Space gives simple and strong support for studies, speaking skills, competitions, and overall growth in our town.
           </p>
+          <figure class="hero-illustration-panel">
+            <img src="assets/images/self-growth-activities.svg" alt="Student self-growth activities including human body learning, robotics, yoga, exercise, telescope, singing, games and dance" />
+          </figure>
+          <div class="hero-badges">
+            <span>Human Body 3D Learning</span>
+            <span>Robotics + Science</span>
+            <span>Yoga + Exercise</span>
+            <span>Singing + Dance + Games</span>
+          </div>
           <div class="hero-actions">
             <a href="#register" class="btn btn-primary">Start Registration</a>
             <a href="#programs" class="btn btn-secondary">Explore Programs</a>
           </div>
           <ul class="hero-meta">
-            <li>Town-focused batches</li>
+            <li>Local batches with modern teaching</li>
             <li>Verified mentors</li>
-            <li>Parent updates</li>
+            <li>Regular parent updates</li>
           </ul>
         </div>
-        <div class="hero-card">
+        <div class="hero-card innovation-card reveal">
           <h2>Admissions Open</h2>
-          <p>June to August 2026 cohort for student activities and competitions.</p>
+          <p>New batch open now for student learning and activities.</p>
+          <div class="innovation-grid">
+            <figure class="innovation-media">
+              <img src="https://placehold.co/420x260/dce9ff/102f59?text=AI+Powered+Classroom" alt="AI powered smart classroom visual" />
+              <figcaption>AI Smart Classroom</figcaption>
+            </figure>
+            <figure class="innovation-media">
+              <img src="https://placehold.co/420x260/e8f7f1/153e75?text=Speech+%26+Debate+Lab" alt="Speech and debate practice visual" />
+              <figcaption>Speech & Debate Lab</figcaption>
+            </figure>
+          </div>
           <ul>
             <li>Debate and Public Speaking Club</li>
-            <li>Essay and Creative Writing Lab</li>
-            <li>Quiz and GK Championship Prep</li>
-            <li>Olympiad Readiness Workshops</li>
+            <li>Smart Concept Learning</li>
+            <li>Quiz and GK Preparation</li>
+            <li>Olympiad Practice Sessions</li>
           </ul>
           <a href="#register" class="btn btn-primary block">Reserve Your Seat</a>
         </div>
@@ -74,7 +106,7 @@
 
     <!-- About -->
     <section class="section section-light" id="about">
-      <div class="container narrow">
+      <div class="container narrow reveal">
         <p class="eyebrow">About The Initiative</p>
         <h2>A Serious Academic Development Platform for Our Town</h2>
         <p>
@@ -94,19 +126,19 @@
           <h2>Year-Round Student Development Tracks</h2>
         </div>
         <div class="card-grid">
-          <article class="info-card">
+          <article class="info-card reveal">
             <h3>Academic Skill Labs</h3>
             <p>Reading, writing, comprehension, presentation, and subject confidence modules for school students.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal">
             <h3>Competition Coaching</h3>
             <p>Guided preparation for debate, quiz, essay writing, elocution, and inter-school activity rounds.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal">
             <h3>Mentor-Led Weekend Sessions</h3>
             <p>Small-group mentorship with teachers and academic trainers focused on practical improvement.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal">
             <h3>Parent Orientation Meets</h3>
             <p>Transparent updates on student progress, schedules, expected outcomes, and upcoming events.</p>
           </article>
@@ -122,12 +154,12 @@
           <h2>Academic and Communication Activities</h2>
         </div>
         <div class="competition-grid">
-          <div class="competition-item">Debate Challenge</div>
-          <div class="competition-item">Essay Writing Contest</div>
-          <div class="competition-item">Town Quiz League</div>
-          <div class="competition-item">Speech and Elocution</div>
-          <div class="competition-item">Science Concept Showcase</div>
-          <div class="competition-item">General Knowledge Sprint</div>
+          <div class="competition-item reveal">Debate Challenge</div>
+          <div class="competition-item reveal">Essay Writing Contest</div>
+          <div class="competition-item reveal">Town Quiz League</div>
+          <div class="competition-item reveal">Speech and Elocution</div>
+          <div class="competition-item reveal">Science Concept Showcase</div>
+          <div class="competition-item reveal">General Knowledge Sprint</div>
         </div>
       </div>
     </section>
@@ -140,22 +172,22 @@
           <h2>Simple Steps for Parents and Students</h2>
         </div>
         <div class="process-grid">
-          <article class="process-step">
+          <article class="process-step reveal">
             <span>01</span>
             <h3>Fill Basic Details</h3>
             <p>Enter student and parent details in the registration form below.</p>
           </article>
-          <article class="process-step">
+          <article class="process-step reveal">
             <span>02</span>
             <h3>Select Program Track</h3>
             <p>Choose competitions and development modules suitable for class level.</p>
           </article>
-          <article class="process-step">
+          <article class="process-step reveal">
             <span>03</span>
             <h3>Confirmation Call</h3>
             <p>Our team will contact you to confirm schedule, batch, and orientation date.</p>
           </article>
-          <article class="process-step">
+          <article class="process-step reveal">
             <span>04</span>
             <h3>Complete Payment (Phase 2)</h3>
             <p>Online payment integration is planned in next phase. Offline instructions available now.</p>
@@ -213,15 +245,15 @@
           <h2>Built on Transparency, Discipline, and Local Accountability</h2>
         </div>
         <div class="trust-points">
-          <article>
+          <article class="reveal">
             <h3>Verified Academic Mentors</h3>
             <p>Programs are guided by teachers and trained facilitators with student-facing experience.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Parent Communication</h3>
             <p>Regular updates, progress check-ins, and clear schedules build confidence for families.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Outcome-Focused Activities</h3>
             <p>Students improve communication, confidence, and academic discipline through structured participation.</p>
           </article>
@@ -237,15 +269,15 @@
           <h2>What Parents and Students Say</h2>
         </div>
         <div class="card-grid">
-          <blockquote class="quote-card">
+          <blockquote class="quote-card reveal">
             <p>“My daughter became far more confident in speaking competitions. The sessions are disciplined and very professional.”</p>
             <cite>- Parent, Class 8 Student</cite>
           </blockquote>
-          <blockquote class="quote-card">
+          <blockquote class="quote-card reveal">
             <p>“The quiz coaching was structured and motivating. I represented my school for the first time this year.”</p>
             <cite>- Student, Class 10</cite>
           </blockquote>
-          <blockquote class="quote-card">
+          <blockquote class="quote-card reveal">
             <p>“As a parent, I liked the communication and clear process. This feels like a credible local academic initiative.”</p>
             <cite>- Parent, Class 6 Student</cite>
           </blockquote>
@@ -261,10 +293,10 @@
           <h2>Moments from Workshops and Competitions</h2>
         </div>
         <div class="gallery-grid">
-          <figure class="gallery-item"><img src="https://placehold.co/600x420/e9eef7/1f2d4a?text=Debate+Round" alt="Students in debate round" /></figure>
-          <figure class="gallery-item"><img src="https://placehold.co/600x420/f0f4fa/1f2d4a?text=Quiz+Session" alt="Quiz session in classroom" /></figure>
-          <figure class="gallery-item"><img src="https://placehold.co/600x420/e8f1ee/1f2d4a?text=Essay+Workshop" alt="Essay workshop scene" /></figure>
-          <figure class="gallery-item"><img src="https://placehold.co/600x420/f4efe9/1f2d4a?text=Prize+Ceremony" alt="Prize ceremony with students" /></figure>
+          <figure class="gallery-item reveal"><img src="https://placehold.co/600x420/e9eef7/1f2d4a?text=Debate+Round" alt="Students in debate round" /></figure>
+          <figure class="gallery-item reveal"><img src="https://placehold.co/600x420/f0f4fa/1f2d4a?text=Quiz+Session" alt="Quiz session in classroom" /></figure>
+          <figure class="gallery-item reveal"><img src="https://placehold.co/600x420/e8f1ee/1f2d4a?text=Essay+Workshop" alt="Essay workshop scene" /></figure>
+          <figure class="gallery-item reveal"><img src="https://placehold.co/600x420/f4efe9/1f2d4a?text=Prize+Ceremony" alt="Prize ceremony with students" /></figure>
         </div>
       </div>
     </section>
@@ -277,17 +309,17 @@
           <h2>Latest Updates for Parents and Students</h2>
         </div>
         <div class="announcement-list">
-          <article>
+          <article class="reveal">
             <h3>Town Quiz League Results Published</h3>
             <p>Scorecards and winner list for Junior and Senior categories are now available.</p>
             <a href="#" class="text-link">View Result PDF (Placeholder)</a>
           </article>
-          <article>
+          <article class="reveal">
             <h3>New Debate Batch Starts 15 June</h3>
             <p>Limited seats available for Classes 8 to 10. Parent orientation on 12 June.</p>
             <a href="#register" class="text-link">Register For Next Batch</a>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Essay Competition Theme Released</h3>
             <p>This month’s topic: “How Students Can Contribute to a Better Town Community.”</p>
             <a href="#" class="text-link">Download Theme Brief (Placeholder)</a>
