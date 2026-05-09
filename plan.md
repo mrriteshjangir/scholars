@@ -28,8 +28,12 @@
 - Aligned Next.js global styles with original `styles.css` for visual parity.
 - Re-validated clean build after parity migration.
 - Removed legacy static reference files: `index.html`, `styles.css`, `script.js`, and old `assets/` folder.
+- Configured GitHub Pages project-path compatibility in Next config (`/scholars` basePath + assetPrefix).
+- Added GitHub Actions workflow for automatic deploy to GitHub Pages on push to `main`.
+- Documented GitHub Pages deployment setup in `README.md`.
 
 ## Notes
 - Legacy static reference files have been cleaned up after migration completion.
 - New Next.js app will live in root with `app/` router.
 - Next improvement: move translation copy object into separate locale files and add persistent language memory (`localStorage`).
+- In GitHub repo settings, Pages source must be set to `GitHub Actions`.
