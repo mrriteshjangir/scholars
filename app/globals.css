@@ -23,11 +23,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
   overflow-x: hidden;
+}
+
+html:lang(hi) body {
+  font-family: var(--font-devanagari), var(--font-inter), system-ui, sans-serif;
 }
 
 img {
@@ -50,7 +54,11 @@ a {
 }
 
 .section {
-  padding: 72px 0;
+  padding: 48px 0;
+}
+
+main > .section + .section {
+  padding-top: 24px;
 }
 
 .section-light {
@@ -89,17 +97,19 @@ p {
 
 .section-head {
   max-width: 760px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .btn {
   border: 1px solid transparent;
   border-radius: 12px;
-  padding: 12px 18px;
+  padding: 10px 18px;
   font-weight: 600;
+  line-height: 1.2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 46px;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -271,6 +281,17 @@ p {
 .main-nav a {
   font-weight: 500;
   color: var(--text-soft);
+  line-height: 1.25;
+}
+
+html:lang(hi) .btn,
+html:lang(hi) .main-nav a,
+html:lang(hi) .faq-question,
+html:lang(hi) label,
+html:lang(hi) input,
+html:lang(hi) select,
+html:lang(hi) textarea {
+  line-height: 1.25;
 }
 
 .main-nav a:hover {
@@ -306,6 +327,19 @@ p {
   padding-top: 88px;
   position: relative;
   isolation: isolate;
+}
+
+.kinetic-section::after {
+  content: "";
+  position: absolute;
+  right: 4%;
+  top: 110px;
+  width: 140px;
+  height: 140px;
+  border-radius: 24px;
+  border: 2px dashed rgba(21, 62, 117, 0.22);
+  transform: rotate(18deg);
+  animation: spinSoft 14s linear infinite;
 }
 
 .hero-glow {
@@ -460,6 +494,11 @@ p {
 }
 
 .innovation-media img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
@@ -474,6 +513,33 @@ p {
 
 .innovation-card:hover .innovation-media img {
   transform: scale(1.06);
+}
+
+.activity-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.showcase-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.showcase-card figure {
+  margin: 0 0 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .hero-card ul {
@@ -506,6 +572,19 @@ p {
 .announcement-list article:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow);
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.tilt-card:hover {
+  transform: perspective(800px) rotateX(2deg) rotateY(-2deg) translateY(-6px);
+}
+
+.pulse-card {
+  animation: pulseLift 2.9s ease-in-out infinite;
 }
 
 .competition-grid {
@@ -577,6 +656,95 @@ p {
   font-size: 0.92rem;
 }
 
+.testimonials-carousel {
+  display: grid;
+  gap: 16px;
+}
+
+.testimonial-viewport {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 560ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.testimonial-slide {
+  width: 100%;
+  min-height: 150px;
+  margin: 0;
+  flex: 0 0 100%;
+  display: grid;
+  gap: 5px;
+  align-content: center;
+}
+
+.testimonial-slide p {
+  font-size: 1.1rem;
+  line-height: 1.1;
+}
+
+.testimonial-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid #b8cae5;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(21, 62, 117, 0.14);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.testimonial-nav span {
+  display: inline-block;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.testimonial-nav:hover {
+  background: #fff;
+  transform: scale(1.04);
+}
+
+.testimonial-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.testimonial-indicators {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.testimonial-dot {
+  width: 18px;
+  height: 10px;
+  border-radius: 20px;
+  border: 1px solid #a9bfdc;
+  background: #d9e6f7;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.testimonial-dot.active {
+  width: 30px;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
 /* Forms */
 .mock-form {
   background: var(--surface);
@@ -596,6 +764,14 @@ label {
   gap: 6px;
   font-weight: 500;
   color: var(--text);
+}
+
+.mock-form > h3 {
+  margin-bottom: 14px;
+}
+
+.mock-form > label {
+  margin-top: 10px;
 }
 
 input,
@@ -624,6 +800,10 @@ textarea:focus {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.mock-form > button.btn {
+  margin-top: 12px;
 }
 
 /* Gallery */
@@ -783,6 +963,10 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .activity-showcase {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .competition-grid,
   .process-grid,
   .trust-points {
@@ -857,7 +1041,11 @@ textarea:focus {
 
 @media (max-width: 620px) {
   .section {
-    padding: 58px 0;
+    padding: 40px 0;
+  }
+
+  main > .section + .section {
+    padding-top: 20px;
   }
 
   .hero {
@@ -892,7 +1080,8 @@ textarea:focus {
   .competition-grid,
   .process-grid,
   .trust-points,
-  .gallery-grid {
+  .gallery-grid,
+  .activity-showcase {
     grid-template-columns: 1fr;
   }
 
@@ -922,7 +1111,11 @@ textarea:focus {
   }
 
   .section {
-    padding: 50px 0;
+    padding: 32px 0;
+  }
+
+  main > .section + .section {
+    padding-top: 16px;
   }
 
   .hero-actions {
@@ -945,6 +1138,9 @@ textarea:focus {
   .reveal,
   .btn,
   .gallery-item img,
+  .tilt-card,
+  .pulse-card,
+  .kinetic-section::after,
   .flying-avatar,
   .ufo,
   .ufo-light,
@@ -1000,5 +1196,26 @@ textarea:focus {
 
   50% {
     opacity: 0.9;
+  }
+}
+
+@keyframes pulseLift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes spinSoft {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

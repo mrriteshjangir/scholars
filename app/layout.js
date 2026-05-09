@@ -1,4 +1,15 @@
 import "./globals.css";
+import { Inter, Noto_Sans_Devanagari } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter"
+});
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-devanagari"
+});
 
 export const metadata = {
   title: "Scholars Space | Town Education & Student Activity Platform",
@@ -9,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="hi">
-      <body>{children}</body>
+      <body className={`${inter.variable} ${notoSansDevanagari.variable}`}>{children}</body>
     </html>
   );
 }
