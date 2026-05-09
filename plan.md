@@ -57,7 +57,7 @@
 - Updated testimonials UX so prev/next controls are placed below the card (no text overlap) and autoplay pauses on hover/focus for better readability.
 - Reduced global inter-section spacing by tightening `.section` paddings across desktop/mobile breakpoints and lowering section header bottom gap.
 - Further compressed visible gaps between consecutive sections by adding `main > .section + .section` top-padding overrides across desktop/mobile.
-- Final deployment hardening: switched GitHub Pages project path config to `/scholers` and added base-path-safe image URL handling to prevent image 404 after hosting.
+- Final deployment hardening: confirmed GitHub Pages project path config as `/scholars` and added base-path-safe image URL handling to prevent image 404 after hosting.
 
 ## Notes
 - Legacy static reference files have been cleaned up after migration completion.

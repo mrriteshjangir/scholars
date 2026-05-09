@@ -4,10 +4,10 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: isProd ? "/scholers" : "",
-  assetPrefix: isProd ? "/scholers/" : "",
+  basePath: isProd ? "/scholars" : "",
+  assetPrefix: isProd ? "/scholars/" : "",
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? "/scholers" : ""
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/scholars" : ""
   },
   images: {
     unoptimized: true
